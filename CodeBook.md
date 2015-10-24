@@ -23,7 +23,7 @@ The features for the initial data are detailed in the features_info.txt file
 ##Codebook 
 The following steps were taken on the initial data set to create the new tidy data set:
 
-1) The subject, label, train, and test text files were read in as tables.
+1) The subject, label, train, and test text files were read in as tables.  
 2) the columns in the training and test data tables were renamed to match the feature names in the features.txt file
 3) "label" and "subject" column names were added to the label and subject tables
 4) The subject training table was combined with the subject training labels and the training session data
