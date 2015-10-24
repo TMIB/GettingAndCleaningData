@@ -31,8 +31,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
     Since a text file of a data table is sometimes hard to read, here's an easy way to read it into R:
     (thanks to https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/ for the code)
   
-    data <- read.table("averagesData.txt", header = TRUE)
-    View(data)
+    data <- read.table("averagesData.txt", header = TRUE); View(data)
 	
   * run_analysis.R in the github repository.
   
