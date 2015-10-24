@@ -24,7 +24,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
  * I put extensive comments in the run_analysis.R file. Probably more than one normally would for practical application, but as evaluators are all peer students, I felt it was important to ensure functionality was very clear.
  * There is discussion regarding step 3, regarding which columns are measurements on the mean and standard deviation. I chose to take any observation that had "mean" or "std" in the column name. Without knowing the intent of the initial measurements, I felt it was valuable to retain data rather than discard it, and the final result is still tidy data. 
   (See https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/)
- * my variable names are camelCase, with the first letter being lowercase, and subsequent words in the variable name capitalized. This is the standard where I work, and I believe it is much more readable than long names in all lowercase.
+ * my variable names are camel cased. This is the standard where I work, and I believe it is much more readable than long names in all lowercase.
     
 ##Deliverables:
   * A tidy data set, that meets the principles of tidy data. 
