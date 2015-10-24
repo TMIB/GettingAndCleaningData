@@ -18,32 +18,32 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 ##Feature Selection
-The features for the initial data are detailed in the features_info.txt file
+The features for the initial data are detailed in the features_info.txt file  
 
 ##Codebook 
 The following steps were taken on the initial data set to create the new tidy data set:
 
 1) The subject, label, train, and test text files were read in as tables.  
-2) the columns in the training and test data tables were renamed to match the feature names in the features.txt file
-3) "label" and "subject" column names were added to the label and subject tables
-4) The subject training table was combined with the subject training labels and the training session data
-5) The subject test table was combined with the subject test labels and the training test data
-6) Duplicate columns were removed from all tables
-7) A "type" column was added to indicate whether a table was a "train" table or a "test" table
-8) A new dataset was created by merging the training and test sets
-9) The measurements on the mean and standard deviation for each measurement were extracted.
-10) The data set activity names were renamed to be more descriptive, using the labels defined in activity_labels.txt
-11) The data set variables were renamed with descriptive names according to the following rules:
-	"tBody" was replaced with "TimeBody"
-	"tGravity" was replaced with "TimeGravity"
-	"Mag" was replaced with "Magnitude"
-	"Gyro" was replaced with "Gyroscope"
-	"Acc" was replaced with "Accelerometer"
-	"fBody" was replaced with "FastFourierTransformBody"
-	"Freq" was replaced with "Frequency"
-	"BodyBody" was replaced with "Body"
-	"std" was replaced with "StandardDeviation"
-	
-12) The average of each variable for each subject and activity was determined
+2) the columns in the training and test data tables were renamed to match the feature names in the features.txt file  
+3) "label" and "subject" column names were added to the label and subject tables  
+4) The subject training table was combined with the subject training labels and the training session data  
+5) The subject test table was combined with the subject test labels and the training test data  
+6) Duplicate columns were removed from all tables  
+7) A "type" column was added to indicate whether a table was a "train" table or a "test" table  
+8) A new dataset was created by merging the training and test sets  
+9) The measurements on the mean and standard deviation for each measurement were extracted.  
+10) The data set activity names were renamed to be more descriptive, using the labels defined in activity_labels.txt  
+11) The data set variables were renamed with descriptive names according to the following rules:  
+	"tBody" was replaced with "TimeBody"  
+	"tGravity" was replaced with "TimeGravity"  
+	"Mag" was replaced with "Magnitude"  
+	"Gyro" was replaced with "Gyroscope"  
+	"Acc" was replaced with "Accelerometer"  
+	"fBody" was replaced with "FastFourierTransformBody"  
+	"Freq" was replaced with "Frequency"  
+	"BodyBody" was replaced with "Body"  
+	"std" was replaced with "StandardDeviation"  
+	  
+12) The average of each variable for each subject and activity was determined  
 13) The averages were used to generate a tidy data text file (averagesData.txt) that meets the principles of tidy data. This is in a wide format, with 30 subjects across 6 activities. Each row is an observation and each column is a variable. There are no duplicate variables.
 
